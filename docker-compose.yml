@@ -1,0 +1,13 @@
+version: '3.2'
+
+services:
+  kraana:
+    build: .
+    ports:
+      - 8080:8080
+    volumes:
+      - ./:/app
+      - root:/root
+
+volumes:
+  root:
